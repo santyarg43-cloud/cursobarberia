@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Barbería</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="stats-card">
+        <header>
+            <h1 class="main-title">ESTADÍSTICAS</h1>
+            <div class="summary-line">
+                <span>Iniciando: 20 personas</span>
+                <span class="separator">|</span>
+                <span>En Proceso: 18 personas</span>
+                <span class="separator">|</span>
+                <span>Dejaron: 15 personas</span>
+            </div>
+        </header>
+
+        <main class="chart-section">
+            <canvas id="barberChart"></canvas>
+        </main>
+
+        <footer class="legend-container">
+            <div class="legend-item">
+                <span>INICIARON</span>
+            </div>
+            <div class="legend-item">
+                <span>EN PROCESO</span>
+            </div>
+            <div class="legend-item">
+                <span>ABANDONARON</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
