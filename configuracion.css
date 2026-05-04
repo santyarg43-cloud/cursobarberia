@@ -1,0 +1,117 @@
+ /* Variables Globales */
+:root {
+    --azul-marino: #001233;
+    --rojo-barber: #ff0000;
+    --blanco: #ffffff;
+}
+
+body {
+    background-color: var(--azul-marino);
+    color: var(--blanco);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: lowercase;
+}
+
+/* Navegación para vincular con los otros códigos */
+.menu-navegacion {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-navegacion a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.menu-navegacion a.activo {
+    border-bottom: 2px solid var(--rojo-barber);
+    opacity: 1;
+}
+
+.titulo-precios {
+    margin: 40px 0;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+}
+
+.contenedor-precios {
+    width: 90%;
+    max-width: 500px;
+}
+
+/* El cuadro en rojo solicitado */
+.cuadro-precios {
+    border: 3px solid var(--rojo-barber);
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.fila-precio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid var(--rojo-barber);
+}
+
+.fila-precio:last-child {
+    border-bottom: none;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.input-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-rojo {
+    background: transparent;
+    border: 1px solid var(--rojo-barber);
+    color: var(--blanco);
+    padding: 8px;
+    width: 100px;
+    border-radius: 4px;
+    text-align: right;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.input-rojo:focus {
+    background-color: var(--rojo-barber);
+}
+
+.boton-guardar {
+    width: 100%;
+    margin-top: 30px;
+    background-color: var(--rojo-barber);
+    color: var(--blanco);
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: lowercase;
+    transition: 0.3s;
+}
+
+.boton-guardar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+}

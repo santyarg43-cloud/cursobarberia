@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios de la Barbería</title>
+    <link rel="stylesheet" href="configuracion.css">
+</head>
+<body>
+
+    <nav class="menu-navegacion">
+        <a href="perfil.html">perfil</a>
+        <a href="index.html">stock</a>
+        <a href="precios.html" class="activo">precios</a>
+    </nav>
+
+    <header>
+        <h1 class="titulo-precios">precios</h1>
+    </header>
+
+    <main class="contenedor-precios">
+        <div class="cuadro-precios">
+            <!-- Item: Degrade -->
+            <div class="fila-precio">
+                <label>degrade</label>
+                <div class="input-contenedor">
+                    <span>$</span>
+                    <input type="number" class="input-rojo" data-corte="degrade" placeholder="0">
+                </div>
+            </div>
+
+            <!-- Item: Clasico -->
+            <div class="fila-precio">
+                <label>clasico</label>
+                <div class="input-contenedor">
+                    <span>$</span>
+                    <input type="number" class="input-rojo" data-corte="clasico" placeholder="0">
+                </div>
+            </div>
+
+            <!-- Item: A Tijera -->
+            <div class="fila-precio">
+                <label>a tijera</label>
+                <div class="input-contenedor">
+                    <span>$</span>
+                    <input type="number" class="input-rojo" data-corte="a tijera" placeholder="0">
+                </div>
+            </div>
+
+            <!-- Item: Texturizado -->
+            <div class="fila-precio">
+                <label>texturizado</label>
+                <div class="input-contenedor">
+                    <span>$</span>
+                    <input type="number" class="input-rojo" data-corte="texturizado" placeholder="0">
+                </div>
+            </div>
+        </div>
+
+        <button id="btn-guardar-precios" class="boton-guardar">actualizar precios</button>
+    </main>
+
+    <script src="precios.js"></script>
+</body>
+</html>
