@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock para Barberos</title>
+    <!-- Vinculación del archivo CSS -->
+    <link rel="stylesheet" href="control.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="titulo-principal">STOCK PARA BARBEROS</h1>
+    </header>
+
+    <main>
+        <div class="tabla-stock" id="tabla-stock">
+            <!-- Los items se generan aquí -->
+            <div class="fila">
+                <label>shampoo acido</label>
+                <input type="number" class="input-stock" data-producto="shampoo acido" placeholder="0">
+            </div>
+            <div class="fila">
+                <label>acondicionador</label>
+                <input type="number" class="input-stock" data-producto="acondicionador" placeholder="0">
+            </div>
+            <div class="fila">
+                <label>tinturas neon</label>
+                <input type="number" class="input-stock" data-producto="tinturas neon" placeholder="0">
+            </div>
+            <div class="fila">
+                <label>tintura negra</label>
+                <input type="number" class="input-stock" data-producto="tintura negra" placeholder="0">
+            </div>
+            <div class="fila">
+                <label>tintura roja</label>
+                <input type="number" class="input-stock" data-producto="tintura roja" placeholder="0">
+            </div>
+            <div class="fila">
+                <label>tintura blanca</label>
+                <input type="number" class="input-stock" data-producto="tintura blanca" placeholder="0">
+            </div>
+            <div class="fila">
+                <label>crema acida</label>
+                <input type="number" class="input-stock" data-producto="crema acida" placeholder="0">
+            </div>
+            <div class="fila">
+                <label>polvo decolorante</label>
+                <input type="number" class="input-stock" data-producto="polvo decolorante" placeholder="0">
+            </div>
+        </div>
+
+        <div class="contenedor-boton">
+            <button id="btn-guardar" class="boton-accion">guardar stock</button>
+        </div>
+    </main>
+
+    <!-- Vinculación del archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
