@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Barbero</title>
+    <link rel="stylesheet" href="ficha.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="titulo-perfil">perfil del barbero</h1>
+    </header>
+
+    <main class="contenedor-perfil">
+        <!-- Sección de Imagen -->
+        <div class="foto-seccion">
+            <div id="visor-foto" class="visor-foto">
+                <span>sin foto</span>
+            </div>
+            <input type="file" id="input-foto" accept="image/*" class="input-rojo">
+        </div>
+
+        <!-- Campos de Información -->
+        <div class="campo">
+            <label>nombre y apellido</label>
+            <input type="text" id="nombre" class="input-rojo" placeholder="completar nombre...">
+        </div>
+
+        <div class="campo">
+            <label>experiencia</label>
+            <textarea id="experiencia" class="input-rojo" rows="4" placeholder="detallar experiencia..."></textarea>
+        </div>
+
+        <div class="campo-doble">
+            <div class="sub-campo">
+                <label>dirección del local</label>
+                <input type="text" id="direccion" class="input-rojo" placeholder="calle 123...">
+            </div>
+            <div class="sub-campo">
+                <label>puesto de silla</label>
+                <input type="number" id="silla" class="input-rojo" placeholder="n°">
+            </div>
+        </div>
+
+        <div class="acciones">
+            <button id="btn-guardar-perfil" class="boton-perfil">guardar perfil</button>
+            <a href="index.html" class="enlace-volver">ir a control de stock</a>
+        </div>
+    </main>
+
+    <script src="perfil.js"></script>
+</body>
+</html>
